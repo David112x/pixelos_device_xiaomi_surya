@@ -270,6 +270,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
 
+# USB
+PRODUCT_PACKAGES += \
+   init.qcom.usb.rc \
+   init.qcom.usb.sh
+
+PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/usb/etc
+
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.surya
