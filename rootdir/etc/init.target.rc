@@ -27,6 +27,8 @@
 #
 #
 
+import /vendor/etc/init/hw/init.target.charger.rc
+
 on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
